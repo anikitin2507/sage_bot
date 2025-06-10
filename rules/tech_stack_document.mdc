@@ -1,0 +1,10 @@
+# Tech Stack
+
+| Layer | Library / Service (version) | Purpose | Documentation |
+|-------|-----------------------------|---------|---------------|
+| Runtime | **Python 3.12** | Core language and runtime executing the bot | <https://docs.python.org/3.12/> |
+| Bot SDK | **python-telegram-bot 21.11.1** | Async wrapper around the Telegram Bot API for receiving updates and sending messages | <https://docs.python-telegram-bot.org/> |
+| OpenAI SDK | **openai 1.85.0** | OpenAI-compatible Python client used with `base_url=https://openrouter.ai/api/v1` to call Llama 3.1 8B via OpenRouter | <https://openrouter.ai/docs/quickstart> |
+| Database | *None (in-memory)* | Short-lived context stored in RAM; no external DB needed for MVP | — |
+| Deployment | **Railway** | PaaS that builds & hosts the bot container, manages environment variables and webhooks | <https://docs.railway.app/> |
+| Linter / Formatter | **ruff 0.4.3**, **black 24.4.2** | Fast static analysis (ruff) and opinionated automatic code formatting (black) | <https://docs.astral.sh/ruff/>, <https://black.readthedocs.io/> |
