@@ -66,9 +66,9 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
             api_key=OPENROUTER_KEY,
         )
 
-        # Send request to OpenRouter (Llama 3.1 8B)
+        # Send request to OpenRouter (claude-3-haiku)
         response = client.chat.completions.create(
-            model="meta-llama/llama-3.1-8b",
+            model="anthropic/claude-3-haiku",
             messages=[
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": message_text},
